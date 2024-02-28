@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/6b80586d-124d-4219-af8c-29022b711854/webchat/config.js" defer></script> -->
+    <!-- <script>!(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                initPayload: '/welcome_message',
+                customData: { language: "en", "userId": "123" },
+                socketUrl: "https://a05f-42-114-127-76.ngrok.io",
+                title: 'Admin',
+                subtitle: 'Bot hỗ trợ',
+                inputTextFieldHint: "Type a message",
+                showMessageDate: true,
+                params:{ "storage": "session" },
+                onSocketEvent: {
+                  'bot_uttered': function (e) { console.log(e.text) },
+                  'user_uttered': function (e) { console.log(e) },
+                  'connect': function () { console.log('connection established') },
+                  'disconnect': function () { console.log('disconnect'); },
+                }
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+    </script> -->
+  </body>
+</html>

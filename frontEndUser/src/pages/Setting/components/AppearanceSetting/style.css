@@ -1,0 +1,72 @@
+/* .appearance-setting {} */
+
+.title-appearance {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.appearance-option-item {
+    margin-bottom: 15px;
+}
+
+.title-option-item {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.list-value-option {
+    display: flex;
+    align-items: center;
+}
+
+.value-theme-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.value-theme-item .icon-theme-active {
+    display: none;
+}
+
+.value-theme-item.active {
+    border: 2px solid blue;
+}
+
+.value-theme-item.active .icon-theme-active {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--blue-500);
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-theme-active .icon {
+    font-size: 10px;
+}
+
+.value-font-item {
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.value-font-item.active {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}

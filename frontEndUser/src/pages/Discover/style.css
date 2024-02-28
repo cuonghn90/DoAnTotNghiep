@@ -1,0 +1,118 @@
+.discover {
+    padding: 12px 12px 0 12px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.header-filter {
+    height: 40px;
+    display: flex;
+    align-items: start;
+}
+
+.header-filter .filter-option {
+    margin-right: 15px;
+}
+.box-input {
+    width: 260px;
+    position: relative;
+}
+
+.icon-input {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: var(--icon-medium);
+}
+
+.icon-input:hover {
+    color: var(--blue-300);
+}
+
+.base-input {
+    width: 100%;
+    background-color: #2D303E;
+    border-radius: var(--border-radius);
+    color: #fff;
+    height: var(--height-large);
+    padding: 0 30px 0 16px;
+    outline: none;
+    border: none;
+}
+.pagination-discover {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    border-top: 1px solid var(--border-color);
+}
+
+.main-discover {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-gap: 2%;
+    overflow: auto;
+    height: calc(100% - 80px);
+}
+
+.main-discover::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.main-discover::-webkit-scrollbar {
+    width: 7px;
+}
+
+.main-discover::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+
+
+.drawer-detail-food{
+    z-index: 10 !important;
+}
+.ant-modal-mask,.ant-modal-wrap{
+    z-index: 1001 !important;
+}
+.ant-modal{
+    z-index: 1002 !important;
+}
+@media only screen and (max-width: 1100px) {
+    .main-discover {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 2%;
+        overflow: auto;
+        height: calc(100% - 80px);
+    }
+}
+@media only screen and (max-width: 930px) {
+    .main-discover {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+        overflow: auto;
+        height: calc(100% - 80px);
+    }
+}
+@media only screen and (max-width: 650px) {
+    .main-discover {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 98%;
+        grid-gap: 2%;
+        overflow: auto;
+        height: calc(100% - 80px);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header-filter{display: flex;
+    }
+}

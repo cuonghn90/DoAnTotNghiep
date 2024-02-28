@@ -1,0 +1,105 @@
+.login {
+    position: relative;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #8f2c24;
+    margin-bottom: 10px;
+}
+
+.login .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.login .inputBox input {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    color: #8f2c24;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.login .inputBox::placeholder {
+    color: #8f2c24;
+}
+
+.login .inputBox #btn {
+    position: relative;
+    border: none;
+    outline: nine;
+    background-color: #8f2c24;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.login .inputBox #btn:hover {
+    background: #d64c42;
+}
+
+.login .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .group button {
+    outline: none;
+    background-color: transparent;
+    font-size: 1.25em;
+    color: #8f2c24;
+    font-weight: 00;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login .group button:nth-child(2) {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-login{
+        display: flex;
+        justify-content: center;
+    }
+    .login {
+        position: relative !important;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(15px);
+        border: 1px solid #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    }
+}

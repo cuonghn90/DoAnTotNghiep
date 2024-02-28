@@ -1,0 +1,36 @@
+/* .security-setting{
+
+} */
+.title-security{
+    font-size: 20px;
+    font-weight: 500;
+}
+.security-option{
+    margin-top: 20px;
+}
+.title-option{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-change-password .field-profile{
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.field-profile .field-input{
+    margin-bottom: 5px;
+}
+.field-profile .text-error{
+    color: red;
+    font-size: 16px;
+}
+.btn-save-password{
+    display: flex;
+    width: 250px;
+    justify-content: left;
+    margin-top: 5px;
+}
+.security-setting .btn-delete-history{
+    background-color: var(--blue-400);
+}

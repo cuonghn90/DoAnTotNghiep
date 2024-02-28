@@ -1,0 +1,35 @@
+.dashboard-percent{
+    height: 100%;
+    width: 100%;
+}
+.title-dashboard-percent{
+    height: var(--height-default);
+    font-size: 1.5em;
+}
+.dashboard-percent-content{
+    padding: 10px 0;
+    height: calc(100% - var(--height-default));
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.process-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.label-process-item{
+    margin-top: 10px;
+}
+.ant-progress-circle .ant-progress-text{
+    color: #fff !important;
+}
+@media only screen and (max-width: 1024px) {
+    .dashboard-percent-content{
+        flex-direction: row;
+    }
+}

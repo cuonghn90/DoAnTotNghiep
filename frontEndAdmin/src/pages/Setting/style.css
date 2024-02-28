@@ -1,0 +1,15 @@
+.setting{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    background-color: #1F1D2B;
+}
+@media only screen and (max-width: 1024px) {
+    .setting {
+        display: flex;
+        flex-direction: column;
+        /* padding: 12px; */
+        gap: 20px;
+    }
+}

@@ -1,0 +1,36 @@
+.box-input {
+    width: 100%;
+    position: relative;
+}
+
+.icon-input {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: var(--icon-medium);
+}
+
+.icon-input:hover {
+    color: var(--blue-300);
+}
+
+.base-input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    color: #000;
+    height: var(--height-default);
+    padding-left: 12px;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+.box-input .label-input{
+    display: inline-block;
+    margin-bottom: 8px;
+    color:#1F1F1F;
+    font-weight: 500;
+}

@@ -1,0 +1,594 @@
+.manage-orders {
+    width: 100%;
+    height: 100%;
+    background-color: #1F1D2B;
+    border-radius: var(--border-radius);
+    padding: 0 12px;
+    color: #fff;
+}
+
+.title-manage-orders {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-status {
+    padding: 2px 5px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+
+.text-status.pending {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.text-status.success {
+    color: greenyellow;
+    border: 1px solid greenyellow;
+}
+
+.text-status.cancle {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.text-status .icon-expand-status {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.order-item {
+    padding: 10px 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.order-item .wrap-image-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.order-item .action-with-item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.icon-edit-order {
+    color: #fff
+}
+
+.icon-delete-order {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.wrap-btn-action {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    background-color: #393C49;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#tbody-table .item-order {
+    /* cursor: pointer; */
+    padding: 0 5px;
+}
+
+.item-order .icon-edit-order {
+    cursor: pointer;
+}
+
+.table-order-content {
+    height: calc(100% - var(--height-row-table));
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table-order-content::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.table-order-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.table-order-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+
+.manage-orders-pagination {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #393C49;
+}
+
+.manage-orders-pagination .paging {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toolbar-order .toolbar {
+    display: flex;
+}
+
+.toolbar-order .toolbar-right {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+.toolbar-right .toolbar-item {
+    margin-left: 10px;
+}
+
+.toolbar-order .toolbar-left {
+    display: flex;
+    flex: 1;
+}
+
+.toolbar-order .toolbar-left .input-name {
+    width: 100% !important;
+}
+
+.modal-info {
+    width: 50% !important;
+}
+
+.btn-print {
+    margin-right: 10px;
+}
+
+.order-history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-order {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.header-order .image-order {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-order img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-payment-id {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.list-food-ordered {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.food-ordered-item {
+    height: var(--height-default);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.row-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-order {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order-payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.order-payment-method .text-method-payment {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.order-payment-method .list-method {
+    display: flex;
+    align-items: center;
+}
+
+.method-payment-order-item {
+    margin-right: 10px;
+}
+
+.modal-change-status {
+    width: 300px !important;
+}
+
+
+.m-grid {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid var(--grey-500);
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    height: calc(100% - var(--height-default) - 120px);
+}
+
+.m-grid::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.m-grid::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.m-grid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+
+
+.m-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: unset;
+    border: unset;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.m-table tr {
+    border-bottom: 1px solid var(--grey-500);
+    height: 48px;
+    /* background-color: #FFFFFF; */
+}
+
+.m-table tr th,
+td {
+    padding-right: 32px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+tr>th:first-child,
+tr>td:first-child {
+    position: sticky;
+    left: 0;
+    line-height: 100%;
+}
+
+
+tr>th:last-child,
+tr>td:last-child {
+    position: sticky;
+    right: 0;
+    line-height: 100%;
+    z-index: 1;
+
+}
+
+tr>td.over:last-child {
+    z-index: 2;
+}
+
+tr>th:first-child {
+    background-color: #393C49;
+}
+
+tr>td:first-child {
+    background-color: #1F1D2B;
+}
+
+tr>th:last-child {
+    background-color: #393C49;
+}
+
+tr>td:last-child {
+    background-color: #1F1D2B;
+}
+
+.m-table tr th:first-child,
+td:first-child {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.m-table tr th:last-child,
+td:last-child {
+    padding-right: 16px;
+}
+
+.m-table input {
+    width: 20px;
+    height: 20px;
+}
+
+.m-table thead tr {
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.m-table tr:hover,
+tr:hover>td {
+    cursor: pointer;
+    background-color: var(--grey-700);
+}
+
+.m-table thead tr:first-child {
+    background-color: #393C49
+}
+
+.m-table tr td {
+    font-weight: 400;
+}
+
+td:last-child {
+    color: blue;
+}
+
+.m-table .text-table-left {
+    text-align: left;
+    background-color: #1F1D2B;
+}
+
+.m-table .text-table-center {
+    text-align: center;
+    background-color: #1F1D2B;
+}
+
+.m-table .text-table-right {
+    text-align: right;
+    background-color: #1F1D2B;
+}
+
+.text-table {
+    display: inline-block;
+}
+
+.login-to-view-order {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #1F1D2B;
+}
+
+.box-input {
+    width: 100%;
+    position: relative;
+}
+
+.icon-input {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: var(--icon-medium);
+    color: #000;
+}
+
+.icon-input:hover {
+    color: var(--blue-300);
+}
+
+.base-input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    color: #000;
+    height: var(--height-default);
+    padding-left: 12px;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.box-input .label-input {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #1F1F1F;
+    font-weight: 500;
+}
+
+.name-food-ordered {
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.quantity-food-ordered {
+    min-width: 50px;
+    max-width: 100px;
+    text-align: start;
+}
+
+.price-food-ordered {
+    min-width: 50px;
+    max-width: 100px;
+}
+
+.total-money-food-ordered {
+    min-width: 200px;
+    max-width: 250px;
+    text-align: right;
+}
+
+.order-print {
+    padding: 10px;
+    min-width: 300px;
+    width: max-content;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.phone-admin {
+    margin-bottom: 10px;
+}
+
+.order-print .row-order {
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.order-print .row-order .col-order {
+    font-weight: 400;
+}
+
+.first-row-ordered {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.order-print .food-ordered-item {
+    justify-content: initial;
+}
+
+.order-print .name-food-ordered {
+    min-width: 150px;
+    word-wrap: break-word;
+}
+
+.order-print .quantity-food-ordered {
+    margin-right: 10px;
+    min-width: 60px;
+    text-align: end;
+}
+
+.order-print .price-food-ordered {
+    min-width: 80px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.order-print .total-money-food-ordered {
+    min-width: 100px;
+    text-align: end;
+}
+
+@media only screen and (max-width: 1024px) {
+    .setting-content {
+        width: 100%;
+    }
+
+    .m-table .column-order-id {
+        width: 60px !important;
+        min-width: 60px !important;
+    }
+
+    .m-table .column-action {
+        width: 80px !important;
+    }
+}
+
+@media only screen and (min-height: 1024px) {
+    .m-table tr {
+        max-height: 10% !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .modal-detail-order {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-detail-order {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .name-food-ordered {
+        min-width: 100px;
+        max-width: 150px;
+    }
+
+    .quantity-food-ordered {
+        min-width: 50px;
+        max-width: 100px;
+        text-align: start;
+    }
+
+    .price-food-ordered {
+        min-width: 50px;
+        max-width: 100px;
+    }
+
+    .total-money-food-ordered {
+        min-width: 100px;
+        max-width: 150px;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .ant-modal.modal-change-status {
+        width: 320px !important;
+    }
+
+}

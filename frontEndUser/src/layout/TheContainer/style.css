@@ -1,0 +1,7 @@
+.container {
+    background-color: #393C49;
+    margin: 12px;
+    border-radius: var(--border-radius);
+    height: calc(100vh - 64px - 24px);
+    overflow: hidden;
+}

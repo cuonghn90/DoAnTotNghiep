@@ -1,0 +1,164 @@
+.ant-modal{
+    width: 50% !important;
+    height: 100%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%) !important;
+    transform-origin: none;
+}
+.ant-modal-content{
+    width: 100%;
+}
+.form-add-or-edit{
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+.form-add-or-edit .label-input {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #1F1F1F;
+    font-weight: 500;
+}
+.form-add-or-edit .row{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.form-add-or-edit .row .col{
+    width: 46%;
+    display: flex;
+    align-items: start;
+}
+.form-add-or-edit .row .col:first-child {
+   margin-right: 10px;
+}
+.form-add-or-edit .row-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.form-add-or-edit input{
+    width: 100%;
+}
+.btn-upload{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    height: var(--height-default);
+    background-color: var(--blue-500);
+    padding: 0 16px;
+    border-radius: var(--border-radius);
+    color: #fff;
+}
+.food-name{
+    width: 100%;
+}
+.food-image{
+    margin-bottom: 5px;
+}
+.wrap-food-image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    border: 1px  solid rgb(209, 188, 188);
+}
+.food-region{
+    display: flex;
+    flex-direction: column;
+}
+.food-brand{
+    width: 100%;
+}
+.food-region label{
+    display: inline-block;
+    margin-bottom: 8px;
+    color:#1F1F1F;
+    font-weight: 500;
+}
+.food-ingredient .label-food {
+    display: inline-block;
+    margin-bottom: 8px;
+        font-weight: 500;
+}
+.food-ingredient .ant-transfer-list{
+    flex:1
+}
+.food-describle,.food-ingredient,.food-price,.food-tags{
+    width: 100%;
+}
+.col{
+    display: flex;
+    align-items: center;
+}
+.col .food-region{
+    margin-right: 10px;
+    flex: 1;
+}
+.quantity-box{
+    flex: 1;
+}
+.food-describle {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.base-textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: var(--height-default);
+    max-height: 150px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    color: #000;
+    height: var(--height-default);
+    padding-left: 12px;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.food-describle .label-textarea {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #1F1F1F;
+    font-weight: 500;
+}
+.form-add-or-edit .text-error{
+    color: red;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form-add-or-edit{
+        height: max-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .ant-modal{
+        width: fit-content !important;
+        min-width: 350px
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .form-add-or-edit {
+        /* height: max-content; */
+        max-height: 600px;
+        overflow-y: auto;
+        
+    }
+    .ant-modal{
+        width: 55% !important;
+    }
+    
+}

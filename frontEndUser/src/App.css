@@ -1,0 +1,19 @@
+.layout-right{
+  background-color: #252836 !important;
+}
+.flex{
+    display: flex !important;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.title{
+    margin: 0;
+    color: #fff !important;
+}

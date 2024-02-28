@@ -1,0 +1,22 @@
+.button-primary{
+    background-color: var(--blue-500);
+    color: #fff;
+    height: var(--height-default);
+    border-radius: var(--border-radius);
+    padding: 0 16px;
+    border: none;
+    cursor: pointer;
+}
+.button-primary:hover{
+    background-color: var(--blue-400);
+}
+.button-primary:active{
+    background-color: var(--blue-600);
+    outline-offset: 1px;
+    outline: 2px solid var(--blue-600) !important;
+
+}
+.button-primary.disable{
+    background-color: var(--grey-600);
+    cursor: not-allowed
+}

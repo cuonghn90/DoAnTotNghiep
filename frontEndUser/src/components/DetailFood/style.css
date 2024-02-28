@@ -1,0 +1,363 @@
+.detail-food {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detail-food-info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.detail-food-images {
+    flex: 1;
+}
+
+.display-detail-food {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.display-detail-food img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.list-image-detail-food {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-image-detail-food img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.list-image-detail-food img:hover {
+    opacity: 1;
+}
+
+.detail-food-info-content {
+    flex: 1;
+}
+
+.detail-food-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detail-food-info-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.detail-food-stars {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-food-star {
+    margin-right: 10px;
+}
+
+.number-rate {
+    font-size: 16px;
+}
+
+.detail-food-description {
+    font-size: 16px;
+    word-break: normal;
+    word-wrap: break-word;
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.detail-food-category {
+    display: flex;
+}
+
+.food-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: var(--grey-300);
+    border-radius: var(--border-radius);
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.food-category:hover {
+    background-color: var(--grey-500);
+    color: #fff;
+}
+
+.detail-food-price {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-price {
+    font-size: 16px;
+    width: 30%;
+    font-weight: 500;
+}
+
+.text-number-price {
+    width: 70%;
+    font-weight: 600;
+}
+
+.btn-add-to-cart {
+    margin-top: 15px;
+    width: 50%;
+}
+
+.detail-food-review-comment {
+    margin-top: 20px;
+}
+
+.tabs-detail-food {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-detail-header {
+    height: 60px;
+    position: relative;
+}
+
+.tab-detail-header::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+    top: 50%;
+    left: 0;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+}
+
+.tab-detail-content {
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.tab-options {
+    /* z-index: 2; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 5px 15px;
+}
+
+.tab-detail-header .tab-options .option {
+    color: var(--grey-600);
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.tab-detail-header .tab-options .option.active {
+    border-bottom: 2px solid var(--grey-600);
+}
+
+.tab-customer-reviews {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.customer-review {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    border: 1px solid gray;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.customer-review:hover {
+    background-color: var(--grey-300);
+}
+
+.customer-review-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.customer-review-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.customer-review-content-review {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.customer-review-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-comments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - var(--height-default));
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.comment {
+    width: 100%;
+    display: flex;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.user-comment-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.user-comment-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-comment {
+    margin-bottom: 5px;
+}
+
+.action-with-comment {
+    display: flex;
+    align-items: center;
+}
+
+.action-with-comment .icon {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.action-with-comment .icon.active {
+    color: var(--blue-500);
+}
+
+.action-with-comment .icon:first-child {
+    margin-right: 15px;
+}
+
+.wrap-input-comment {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+.wrap-input-icon{
+    position: relative;
+    width: 100%;
+    height: var(--height-large);
+}
+.icon-send-comment{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+.icon-send-comment.disable{
+    cursor: not-allowed;
+    color: var(--grey-600);
+}
+.input-comment {
+    width: 100%;
+    background-color: #2D303E;
+    border-radius: var(--border-radius);
+    color: #fff;
+    height: var(--height-large);
+    padding: 0 30px 0 16px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+.no-comment{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+@media only screen and (max-width: 800px){
+    .ant-drawer-content-wrapper{
+        width:100% !important
+    }
+    .detail-food-info{
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,193 @@
+.form-profile-setting {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.form-profile-setting::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.form-profile-setting::-webkit-scrollbar {
+    width: 7px;
+}
+
+.form-profile-setting::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+.profile-setting {
+    width: 80%;
+}
+
+.profile-setting-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-edit-profile {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.text-profile {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrap-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+}
+
+.btns-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-image .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    color: #fff
+}
+
+.btn-change-image {
+    margin-right: 5px;
+}
+
+.btn-delete-image {
+    margin-left: 5px;
+}
+
+.form-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.field-profile {
+    flex: 1;
+}
+
+.field-profile {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.row .field-profile:first-child {
+    margin-left: 0;
+}
+
+.row .field-profile:last-child {
+    margin-right: 0;
+}
+
+.field-label {
+    margin-bottom: 5px;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.field-input {
+    width: 100%;
+    height: var(--height-default);
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    padding: 0 8px
+}
+
+.field-input:disabled {
+    background-color: var(--grey-500);
+    color: #fff;
+}
+
+.btn-upload-image-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-profile.disable {
+    cursor: not-allowed;
+}
+
+.btn-upload-image-profile label {
+    display: flex;
+    align-items: center;
+}
+
+.btn-save-profile {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 1024px) {
+    .profile-setting {
+        height: -webkit-fill-available;
+    }
+
+    .btn-save-profile {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btns-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-upload-image-profile {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .btn-delete-image {
+        margin-left: 0;
+    }
+
+    .form-profile .row {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .form-profile .row .field-profile {
+        margin: 0;
+    }
+
+    .btn-save-profile {
+        margin-top: 10px;
+    }
+}

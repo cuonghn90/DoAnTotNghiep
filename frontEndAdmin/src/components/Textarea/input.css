@@ -1,0 +1,27 @@
+.box-textarea {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.base-textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 60px;
+    max-height: 150px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    color: #000;
+    height: var(--height-default);
+    padding-left: 12px;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+.box-textarea .label-textarea{
+    display: inline-block;
+    margin-bottom: 8px;
+    color:#1F1F1F;
+    font-weight: 500;
+}

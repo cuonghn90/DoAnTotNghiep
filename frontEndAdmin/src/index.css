@@ -1,0 +1,70 @@
+:root {
+  --color-text-white: #fff;
+  --border-radius: 5px;
+  --border-color:#E0E0E0;
+  --color-border: #000;
+  --height-default: 32px;
+  --height-large: 36px;
+  --height-row-table: 48px;
+  /* Size icon */
+  --icon-small: 15px;
+  --icon-medium: 17px;
+  --icon-large: 20px;
+  /* Blue */
+  --blue-50: #E6F2FF;
+  --blue-100: #CCE4FF;
+  --blue-200: #99CAFF;
+  --blue-300: #66AFFF;
+  --blue-400: #3395FF;
+  --blue-500: #007AFF;
+  --blue-600: #0062CC;
+  --blue-700: #004999;
+  --blue-800: #003166;
+  --blue-900: #001833;
+
+  /* Grey */
+  --grey-50: #FAFAFA;
+  --grey-100: #F5F5F5;
+  --grey-200: #EEEEEE;
+  --grey-300: #E0E0E0;
+  --grey-400: #BDBDBD;
+  --grey-500: #9E9E9E;
+  --grey-600: #757575;
+  --grey-700: #616161;
+  --grey-800: #424242;
+  --grey-900: #1F1F1F;
+
+  /* Red */
+  --red-50: #FCE6E6;
+  --red-100: #FACCCC;
+  --red-200: #F59999;
+  --red-300: #F06666;
+  --red-400: #EB3333;
+  --red-500: #2E0000;
+  --red-600: #B80000;
+  --red-700: #8A0000;
+  --red-800: #5C0000;
+  --red-900: #2E0000;
+}
+
+@font-face {
+  font-family: 'RegularFont';
+  src: url(assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+  font-family: 'BoldFont';
+  src: url(assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: RegularFont;
+    box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}

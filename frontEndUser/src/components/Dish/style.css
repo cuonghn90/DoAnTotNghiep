@@ -1,0 +1,43 @@
+.dish{
+    width: 100%;
+    background-color: #1F1D2B;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 12px;
+    height: 100%;
+    justify-content: space-between;
+}
+.image-dish{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.dish-info{
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.dish-name{
+    text-wrap: wrap;
+    text-align: center;
+}
+.dish-price{
+    margin: 5px 0;
+}
+.dish-avalable{
+    opacity: 0.5;
+}
+.dish>.btns-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}

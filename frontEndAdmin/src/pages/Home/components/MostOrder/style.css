@@ -1,0 +1,66 @@
+.most-order {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.most-order-toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--height-default);
+    margin-bottom: 20px;
+}
+.toolbar-most-order{
+    display: flex;
+}
+.most-order-list{
+    height: calc(100% - var(--height-default) - 20px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.most-order-list::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.most-order-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.most-order-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+.most-order-item{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 0 10px;
+    border-radius: var(--border-radius);
+}
+.most-order-item:hover{
+    background-color: var(--grey-600);
+}
+.item-image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.most-order-item .item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.info-item .number-ordered{
+    color: #ABBBC2;
+}

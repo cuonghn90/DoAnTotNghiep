@@ -1,0 +1,25 @@
+
+
+.logo {
+    margin: 20px 3px 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-collapse {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffa6;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-collapse:hover {
+    color: #fff !important
+}

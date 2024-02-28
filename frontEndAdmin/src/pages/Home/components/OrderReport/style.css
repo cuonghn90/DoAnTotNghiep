@@ -1,0 +1,217 @@
+.order-report {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.toolbar-order-report {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--height-default)
+}
+
+.title-order-report {
+    font-size: 17px;
+}
+
+.toolbar-order-report .toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-order-report .toolbar .toolbar-item {
+    margin-left: 10px;
+    width: 120px;
+}
+
+.toolbar .input-name {
+    width: 200px !important;
+}
+
+.toolbar-item .input {
+    width: 100px;
+}
+
+.table-order-report {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.first-row-table {
+    /* padding-top: 20px; */
+    display: flex;
+    height: var(--height-default);
+    border-bottom: 1px solid #393C49;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #1F1D2B;
+        z-index: 1000;
+}
+
+
+.content-table {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - var(--height-default));
+    width: 100%;
+}
+
+.table-order-report::-webkit-scrollbar-track {
+    background-color: #393C49 !important;
+}
+
+.table-order-report::-webkit-scrollbar {
+    height: 10px;
+    width: 7px;
+    border-radius: 10px;
+}
+
+.table-order-report::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey-500);
+}
+
+.item-order {
+    display: flex;
+    min-height: 60px;
+    max-height: 60px;
+    align-items: center;
+    border-radius: var(--border-radius);
+    width: max-content;
+}
+
+.content-table .column-customer-name {
+    padding-left: 5px;
+    position: sticky;
+    left: 0;
+}
+
+.item-order:hover {
+    background-color: var(--grey-500);
+}
+
+.item-order:hover>.column-customer-name {
+    background-color: var(--grey-500);
+}
+.item-order:hover>.item-column-customer-name {
+    background-color: var(--grey-500);
+}
+
+.column-order-id {
+    min-width: 100px;
+}
+
+.column-customer-name {
+    min-width: 200px;
+    background-color: #1F1D2B;
+}
+
+.column-date-order {
+    min-width: 150px;
+}
+
+.column-total {
+    min-width: 100px;
+}
+
+.first-row-table .column-status {
+    position: sticky;
+    padding-right: 5px;
+    right: 0;
+    padding-left: 10px;
+    min-width: 120px;
+    background-color: #1F1D2B;
+}
+
+.first-row-table .column-customer-name {
+    position: sticky;
+    padding-left: 5px;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    height: 100%;
+}
+.item-column-status {
+    padding-left: 10px;
+    min-width: 120px;
+    background-color: #1F1D2B;
+    position: sticky;
+    right: 0;
+}
+
+.item-order:hover>.item-column-status {
+    background-color: var(--grey-500);
+}
+
+.item-order .item-column-customer-name {
+    display: flex;
+    align-items: center;
+}
+
+.item-column-customer-name {
+    min-width: 200px;
+    position: sticky;
+    left: 0;
+    background-color: #1F1D2B;
+}
+
+.item-order .item-column-customer-name .wrap-image-customer {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.item-order .item-column-customer-name .wrap-image-customer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 768px) {
+    .order-report {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .table-order-report {
+        height: calc(100% - 22px);
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 1024px) {
+    .first-row-table {
+        display: flex;
+        height: var(--height-default);
+        border-bottom: 1px solid #393C49;
+        width: max-content;
+    }
+}
+
+@media only screen and (min-width : 1024px) {
+    .first-row-table {
+        width: 100%;
+    }
+
+    .item-order {
+        width: 100%;
+    }
+}
+@media only screen and (min-height: 1024px) {
+    .item-order {
+        height: 10% !important;
+        max-height: none;
+    }
+}
